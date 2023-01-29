@@ -14,13 +14,13 @@ const imageContainer = document.createElement('div');
 imageContainer.classList.add('image');
 
 // Create a new img element
-const img = document.createElement('img');
+const img = document.createElement('image');
 
 // Set the src attribute of the img element to the URL of the image
-img.src = 'https://example.com/image.jpg';
+image.src = 'https://example.com/image.jpg';
 
 // Append the img element to the .image div
-imageContainer.appendChild(img);
+imageContainer.appendChild(image);
 
 // Append the .image div to the .main element
 mainElement.appendChild(imageContainer);
