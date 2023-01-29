@@ -6,5 +6,32 @@ window.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector(".button");
   button.addEventListener("click", () => {
     alert("💣");
+    // Select the element with a class name of .main
+const mainElement = document.querySelector('.main');
+
+// Create a new div element with a class name of .image
+const imageContainer = document.createElement('div');
+imageContainer.classList.add('image');
+
+// Create a new img element
+const img = document.createElement('img');
+
+// Set the src attribute of the img element to the URL of the image
+img.src = 'https://example.com/image.jpg';
+
+// Append the img element to the .image div
+imageContainer.appendChild(img);
+
+// Append the .image div to the .main element
+mainElement.appendChild(imageContainer);
+
+// Select the element with a class name of .image
+const imageElement = document.querySelector('.image');
+
+// Add an event listener to the .image element that increases its size when clicked
+imageElement.addEventListener('click', function() {
+    imageElement.style.transform = 'scale(2)';
+});
+
   });
 });
