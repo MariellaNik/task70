@@ -3,24 +3,21 @@ import "../scss/app.scss";
 window.addEventListener("DOMContentLoaded", () => {
   // This block will be executed once the page is loaded and ready
 
-    const mainElement = document.querySelector('.main');
+  const main = document.querySelector(".main");
 
-    const imageContainer = document.createElement('div');
-imageContainer.classList.add('image');
+  const image = document.createElement("div");
+  image.className = "image";
 
-    const img = document.createElement('image');
+  const img = document.createElement("img");
+  img.src = "./images/womanicn.png";
+  image.appendChild(img);
 
-image.src = './images/favicon.ico';
+  main.appendChild(image);
+  const btn = document.querySelector(".image");
+  btn.addEventListener("click", () => {
+    image.style.transform = "scale(2)";
+  });
 
-imageContainer.appendChild(image);
-
-mainElement.appendChild(imageContainer);
-
-const imageElement = document.querySelector('.image');
-
-imageElement.addEventListener('click', function() {
-    imageElement.style.transform = 'scale(2)';
-});
    const button = document.querySelector(".button");
   button.addEventListener("click", () => {
     alert("💣");
